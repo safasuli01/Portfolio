@@ -1,0 +1,43 @@
+.portfolio-wrapper {
+  padding: 50px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.portfolio-wrapper h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.portfolio-item {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.portfolio-item.even {
+  background: #4b0082;
+  color: #f9f9f9;
+}
+
+.portfolio-item.odd {
+  background: #6a0dad;
+  color: #fff;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
